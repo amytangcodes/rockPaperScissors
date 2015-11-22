@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rock | Paper | Scissors</title>	
+	<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
+	<link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<nav>
+		<div class="wrapper flex">
+			<a href="index.html"><img src="images/logo.png" height="337" width="376" alt="" class="logo"></a>
+			<ul class="navbar flex">
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class="intro">	
+		<div class="wrapper">
+			<h1>Rock | Paper | Scissors</h1>
+			<p>Play the classic game of rock, paper, scissors.  First one to 10 points wins!</p>
+		</div>	
+	</section><!-- End of intro -->	
+	
+	<section class="selection">
+		<div class="wrapper">	
+			<p>One...two...three... (click one of three):</p>			
+			<div class="pick flex">
+				<button class="rock"><img src="images/rock.png" height="701" width="623" alt=""></button>
+				<button class="paper"><img src="images/paper.jpg" height="836" width="650" alt=""></button>
+				<button class="scissors"><img src="images/scissors.png" height="332" width="600" alt=""></button>
+			</div>
+		</div>	
+	</section><!-- End of selection -->
+	<section id="results">
+		<div class="wrapper flex">
+			<div class="comparison">
+				<div class="results flex">
+					<div id="user">
+						<h3>You</h3>
+						<div class="overlay">
+							<img src="images/user.png" alt="User">
+							<p id="user-text"></p>
+						</div>
+					</div><!-- End of user -->
+					<div id="computer">
+						<h3>Computer</h3>
+						<div class="overlay">
+							<img src="images/computer.png" alt="Computer">		
+							<p id="computer-text"></p>
+						</div>
+					</div><!-- End of computer -->
+				</div><!-- End of results -->	
+
+				<div id="comparison">
+					<div class="overlay">
+						<img src="images/comparison.png" height="329" width="700" alt="">
+						<p id="comparison-text"></p>
+					</div>
+				</div><!-- End of comparison -->			
+			</div><!-- End of comparison -->		
+			<div class="score-board flex">
+				<div class="score flex">
+					<h3>Score Board</h3>
+					<ul id="score" class="flex">
+						<li class="score-keeping">
+							<p id="userScore">0</p>
+							<h4>You</h4>					
+						</li>
+						<li class="score-keeping">
+							<p id="computerScore">0</p>
+							<h4>Computer</h4>					
+						</li>
+					</ul><!-- End of score -->
+				</div>	
+				<a class="reset" href="index.html">Reset</a>
+			</div><!-- End of score-board -->
+		</div>		
+	</section><!-- End of results -->
+
+	<footer>
+		<div class="wrapper flex">
+			<p>Copyright &copy <span id="year"></span> Amy Tang</p>
+			<ul id="contact" class="flex">
+				<li><a href="http://amytangcodes.com"><i class="fa fa-desktop"></i></a></li>
+				<li><a href="https://ca.linkedin.com/in/amytangcodes"><i class="fa fa-linkedin"></i></a></li>
+			</ul>
+		</div>
+	</footer>	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="scripts.js"></script>
+
+</body>
+</html>
