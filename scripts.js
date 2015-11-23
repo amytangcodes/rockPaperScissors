@@ -6,6 +6,8 @@ $(function() {
 	var rock = $('.rock');
 	var paper = $('.paper');
 	var scissors = $('.scissors');
+	var computerText = $('#computer-text');
+	var comparisonText = $('#comparison-text');
 
 	// COMPUTER SELECTION based on math random 
 	function setComputer() {
@@ -18,39 +20,39 @@ $(function() {
 		} else {
 			computerSelection = 'Scissors';
 		}	
-		$('#computer-text').text(computerSelection);
+		computerText.text(computerSelection);
 	};	
 	// USER SELECTION vs COMPUTER SELECTION		
 	function comparisonText() {
 		console.log(userSelection, computerSelection) ;
 
 		if(userSelection == computerSelection) {
-			$('#comparison-text').text('Tie!');
+			comparisonText.text('Tie!');
 		} 
 		if(userSelection == 'Rock') {
 			if(computerSelection == 'Paper') {
-				$('#comparison-text').text('Paper WINS!');
+				comparisonText.text('Paper WINS!');
 				computerScore++;
 			} else if(computerSelection == 'Scissors') {
-				$('#comparison-text').text('Rock WINS!'); 
+				comparisonText.text('Rock WINS!'); 
 				userScore++;
 			}
 		};
 		if(userSelection == 'Paper') {
 			if(computerSelection == 'Rock') {
-				$('#comparison-text').text('Paper WINS!');
+				comparisonText.text('Paper WINS!');
 				userScore++;
 			} else if(computerSelection == 'Scissors') {
-				$('#comparison-text').text('Scissors WINS!');
+				comparisonText.text('Scissors WINS!');
 				computerScore++;
 			}
 		};
 		if(userSelection == 'Scissors') {
 			if(computerSelection == 'Rock') {
-				$('#comparison-text').text('Rock WINS!');
+				comparisonText.text('Rock WINS!');
 				computerScore++;
 			} else if(computerSelection == 'Paper') {
-				$('#comparison-text').text('Scissors WINS!');
+				comparisonText.text('Scissors WINS!');
 				userScore++;
 			}
 		}; 
