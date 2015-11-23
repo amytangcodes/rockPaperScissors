@@ -1,5 +1,6 @@
 $(function() { 
 
+	// VARIABLES
 	var userScore = 0;
 	var computerScore = 0;
 	var user_text = $('#user-text');
